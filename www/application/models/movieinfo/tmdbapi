@@ -1,0 +1,31 @@
+<?php
+class TMDBApi extends CI_Model{
+    function titlesearch($moviename){
+    }
+    function firstmovie($data){
+    }
+
+    function toptitles($data){
+        if (count($data['movies']) == 0){
+            $jsonResponse = array(
+                'success' => false,
+                'error' => 'No Movies Found'
+            );
+            return json_encode($jsonResponse);
+        }
+        else{
+            $i = 0;
+            $output = array();
+            while ($i<5){   //CAN ALSO PUT <count($data['movies']
+                $output[$i] = htmlentities($data['movies'][$i]['title']." (".$data['movies'][$i]['year'].")");
+                $i = $i+1;
+            }
+            $jsonResponse = array(
+                'success' => true,
+                'output' => $output
+            );
+            return json_encode($jsonResponse);
+        }
+    }
+}
+?>

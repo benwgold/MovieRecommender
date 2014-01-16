@@ -1,0 +1,58 @@
+h1, h2, h3, h4, h5, h6 {
+        text-align: center;
+    }
+
+.thumbnail:hover{
+
+}
+
+.logincontainer {
+    position: relative;
+    margin: 0px auto;
+    height: 40px;
+    width: 247px;
+}
+
+.logincontainer .fbbg {
+    border-radius: 6px;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+    overflow: hidden;
+    background: url(/assets/img/Connect-fb.png) -167px -84px;
+    height: 40px;
+    width: 247px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.logincontainer .fbbg:hover {
+    background: url(/assets/img/Connect-fb.png) -167px -175px;
+    border
+}
+.logincontainer .fbbg:active {
+    background: url(/assets/img/Connect-fb.png) -167px -266px;
+}
+
+.loginlink {
+}
+.loginimage {
+    position:absolute;
+    top:30%;
+    left:30%;
+    clip: rect(84px,415px,124px,167px);
+    left: calc(30% - 167px);
+    top: calc(30% - 84px);
+    border-radius: 25px;
+    -moz-border-radius:10px; /* Old Firefox */
+}
+
+.loginimage:hover {
+    clip: rect(175px,415px,215px,167px);
+    top: calc(30% - 175px);
+}
+
+.loginimage:active {
+    clip: rect(266px,415px,306px,167px);
+    top: calc(30% - 266px);
+}
+
