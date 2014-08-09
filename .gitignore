@@ -1,1 +1,9 @@
+#################
+## IGNORE CONFIG FOLDERfdsf
+#################
+.application/config/
+.application/config/*
+config/
+
+
 oldlistalscraper.py
